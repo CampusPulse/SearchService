@@ -1,0 +1,10 @@
+2018-09-03 02:33:00.275 +05:30 [Warning] Overriding address(es) '"https://localhost:5001, http://localhost:5000"'. Binding to endpoints defined in "UseKestrel()" instead.
+2018-09-03 02:39:52.191 +05:30 [Information] Request starting HTTP/1.1 GET https://127.0.0.1:44340/service-status  
+2018-09-03 02:39:52.724 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Status\"}". Executing action "Service.Controller.StatusController.Get (CampusPulse.SearchService)"
+2018-09-03 02:39:52.864 +05:30 [Information] Executing action method "Service.Controller.StatusController.Get (CampusPulse.SearchService)" - Validation state: Valid
+2018-09-03 02:39:52.877 +05:30 [Information] Executed action method "Service.Controller.StatusController.Get (CampusPulse.SearchService)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 1.7073ms.
+2018-09-03 02:39:52.928 +05:30 [Information] Executing ObjectResult, writing value of type '"System.String"'.
+2018-09-03 02:39:53.032 +05:30 [Information] Executed action "Service.Controller.StatusController.Get (CampusPulse.SearchService)" in 296.0304ms
+2018-09-03 02:39:53.063 +05:30 [Information] Request finished in 880.0899ms 200 text/plain; charset=utf-8
+2018-09-03 02:39:53.128 +05:30 [Information] Request starting HTTP/1.1 GET https://127.0.0.1:44340/favicon.ico  
+2018-09-03 02:39:53.146 +05:30 [Information] Request finished in 13.3881ms 200 

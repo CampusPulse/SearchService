@@ -9,6 +9,7 @@ using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Serilog;
+using Serilog.Sinks.Elasticsearch;
 
 namespace Service
 {
@@ -33,10 +34,16 @@ namespace Service
                  .AddEnvironmentVariables()
                  .Build();
 
+            var elasticUri = config["ElasticConfiguration:Uri"];
+
             Log.Logger = new LoggerConfiguration()
              //.MinimumLevel.Information()
              //.WriteTo.RollingFile("log-{Date}.txt", LogEventLevel.Information)
              .ReadFrom.Configuration(config)
+             .WriteTo.Elasticsearch(new ElasticsearchSinkOptions(new Uri(elasticUri))
+             {
+                 AutoRegisterTemplate = true,
+             })
              .CreateLogger();
 
             return WebHost.CreateDefaultBuilder(args)
