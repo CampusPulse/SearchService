@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <AssemblyName>CampusPulse.SearchService.Manager</AssemblyName>
+    <RootNamespace>CampusPulse.Search.Service.Manager</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CampusPulse.SearchService.CacheManager\CampusPulse.SearchService.CacheManager.csproj" />
+    <ProjectReference Include="..\CampusPulse.SearchService.Domain\CampusPulse.SearchService.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
