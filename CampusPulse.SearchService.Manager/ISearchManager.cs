@@ -7,6 +7,8 @@ namespace CampusPulse.SearchService.Manager
     public interface ISearchManager
     {
         ICollection<Book> GetBooks(BookFilter bookFilter);
-        
+
+       void SaveBook();
+
     }
 }

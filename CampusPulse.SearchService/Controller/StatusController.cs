@@ -14,6 +14,7 @@ namespace Service.Controller
         public IActionResult Get()
         {
             return Ok("Services is up and running");
+            //throw new Exception("Intentioanlly");
         }
     }
 }

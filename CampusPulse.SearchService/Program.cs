@@ -40,10 +40,10 @@ namespace Service
              //.MinimumLevel.Information()
              //.WriteTo.RollingFile("log-{Date}.txt", LogEventLevel.Information)
              .ReadFrom.Configuration(config)
-             .WriteTo.Elasticsearch(new ElasticsearchSinkOptions(new Uri(elasticUri))
-             {
-                 AutoRegisterTemplate = true,
-             })
+             //.WriteTo.Elasticsearch(new ElasticsearchSinkOptions(new Uri(elasticUri))
+             //{
+             //    AutoRegisterTemplate = true,
+             //})
              .CreateLogger();
 
             return WebHost.CreateDefaultBuilder(args)

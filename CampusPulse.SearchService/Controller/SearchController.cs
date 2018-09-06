@@ -7,7 +7,7 @@ using CampusPulse.SearchService.Domain.Model;
 using CampusPulse.SearchService.Manager;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
+using Serilog;
 
 namespace Service.Controller
 {
@@ -16,7 +16,7 @@ namespace Service.Controller
     {
         private readonly ISearchManager searchManager;
         private readonly ILogger logger;
-        public SearchController(ISearchManager searchManager, ILogger logger)
+        public SearchController(ISearchManager searchManager)//, ILogger logger)
         {
             this.searchManager = searchManager;
         }
@@ -28,6 +28,13 @@ namespace Service.Controller
                 //logger.
             }
             return Ok(searchManager.GetBooks(filter));
+        }
+
+        [HttpPost]
+        public IActionResult Post()
+        {
+            searchManager.SaveBook();
+            return Ok();
         }
     }
 }

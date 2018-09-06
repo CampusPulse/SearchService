@@ -17,5 +17,27 @@ namespace CampusPulse.SearchService.Manager
         {
             return cacheManager.get(bookFilter.Acedamics);
         }
+
+        public void SaveBook()
+        {
+            List<Book> books = new List<Book>();
+            Book book = new Book()
+            {
+                Acedamics = "A1",
+                Author = "auth1",
+                Description = "desc",
+                Year = 1990
+            };
+            Book book1 = new Book()
+            {
+                Acedamics = "A1",
+                Author = "auth1",
+                Description = "desc",
+                Year = 1990
+            };
+            books.Add(book);
+            books.Add(book1);
+            cacheManager.save(books as IReadOnlyCollection<Book>);
+        }
     }
 }

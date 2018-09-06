@@ -24,9 +24,14 @@ namespace CampusPulse.CacheManager
 
         public ICollection<T> get(string key)
         {
-            var data = cache.GetStringAsync(key).Result;
+            var data = cache.GetStringAsync("test").Result;
 
             return JsonConvert.DeserializeObject<ICollection<T>>(data);
+        }
+
+        public async Task save(IEnumerable<T>books)
+        {
+            await cache.SetStringAsync("test", JsonConvert.SerializeObject(books));
         }
     }
 }

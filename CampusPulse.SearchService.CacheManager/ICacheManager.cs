@@ -9,5 +9,7 @@ namespace CampusPulse.CacheManager
         Task<string> getAsync(string key);
 
         ICollection<T> get(string key);
+
+        Task save(IEnumerable<T> books);
     }
 }
