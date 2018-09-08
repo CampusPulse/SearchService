@@ -16,7 +16,9 @@ namespace CampusPulse.Trade.Service
             {
                 throw new ArgumentNullException(nameof(routeBuilder));
             }
-            routeBuilder.MapRoute(  "Status","service-status", new { controller = "Status" });
+            routeBuilder.MapRoute("service-status", "service-status", defaults: new { controller = "Status", Action = "Get" });
+            routeBuilder.MapRoute("search-get", "search/get", defaults: new { controller = "Search", Action = "Get" });
+            routeBuilder.MapRoute("search-post", "search/set", defaults: new { controller = "Search", Action = "Post" });
         }
     }
 }
