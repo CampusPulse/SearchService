@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace CampusPulse.Trade.Service
+namespace CampusPulse.Core.Service.Bootstrap
 {
     public class EndpointConfiguration
     {

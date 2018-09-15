@@ -19,6 +19,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CampusPulse.SearchService.M
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CampusPulse.SearchService.Manager.UnitTest", "CampusPulse.SearchService.Manager.UnitTest\CampusPulse.SearchService.Manager.UnitTest.csproj", "{4295A1E1-F7CB-4601-A3EC-7B3652A748AB}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CampusPulse.Core.Streaming.Consumer", "CampusPulse.Core.Streaming.Consumer\CampusPulse.Core.Streaming.Consumer.csproj", "{494EE247-17AC-44EE-A4FA-0001CF5F33B9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CampusPulse.Core.Service", "CampusPulse.Core.Service.Configuration\CampusPulse.Core.Service.csproj", "{38F6A02F-B004-4DC3-AD19-6121EC92750D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CampusPulse.Core.CacheWorker", "CampusPulse.Core.CacheWorker\CampusPulse.Core.CacheWorker.csproj", "{BE652D90-C62D-4CBC-A917-678453408909}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +63,18 @@ Global
 		{4295A1E1-F7CB-4601-A3EC-7B3652A748AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4295A1E1-F7CB-4601-A3EC-7B3652A748AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4295A1E1-F7CB-4601-A3EC-7B3652A748AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{494EE247-17AC-44EE-A4FA-0001CF5F33B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{494EE247-17AC-44EE-A4FA-0001CF5F33B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{494EE247-17AC-44EE-A4FA-0001CF5F33B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{494EE247-17AC-44EE-A4FA-0001CF5F33B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38F6A02F-B004-4DC3-AD19-6121EC92750D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38F6A02F-B004-4DC3-AD19-6121EC92750D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38F6A02F-B004-4DC3-AD19-6121EC92750D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38F6A02F-B004-4DC3-AD19-6121EC92750D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE652D90-C62D-4CBC-A917-678453408909}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE652D90-C62D-4CBC-A917-678453408909}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE652D90-C62D-4CBC-A917-678453408909}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE652D90-C62D-4CBC-A917-678453408909}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

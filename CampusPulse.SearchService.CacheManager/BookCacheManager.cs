@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CampusPulse.CacheManager
 {
-    public class BookCacheManager<T> : ICacheManager<T> where T : Book
+    public class BookCacheManager<T> : ICacheManager<T> where T : class
     {
         private readonly IDistributedCache cache;
 

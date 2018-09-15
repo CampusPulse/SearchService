@@ -8,4 +8,8 @@
     <PackageReference Include="Confluent.Kafka" Version="0.11.5" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CampusPulse.Core.Domain\CampusPulse.Core.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

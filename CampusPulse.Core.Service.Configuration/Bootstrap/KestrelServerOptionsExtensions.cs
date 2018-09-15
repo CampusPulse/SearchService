@@ -8,7 +8,7 @@ using System.Linq;
 using System.Net;
 using System.Security.Cryptography.X509Certificates;
 
-namespace CampusPulse.Trade.Service
+namespace CampusPulse.Core.Service.Bootstrap
 {
     public static class KestrelServerOptionsExtensions
     {

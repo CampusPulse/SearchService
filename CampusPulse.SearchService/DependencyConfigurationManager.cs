@@ -2,12 +2,8 @@
 using CampusPulse.Core.Domain;
 using CampusPulse.SearchService.Manager;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
-namespace CampusPulse.SearchService.Bootstrap
+namespace CampusPulse.SearchService
 {
     public class DependencyConfigurationManager
     {

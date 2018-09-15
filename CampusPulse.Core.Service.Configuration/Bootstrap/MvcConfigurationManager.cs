@@ -1,13 +1,10 @@
-﻿using CampusPulse.SearchService.Filter;
+﻿using CampusPulse.Core.Service.Filter;
 using Microsoft.Extensions.DependencyInjection;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
-namespace CampusPulse.SearchService.Bootstrap
+
+namespace CampusPulse.Core.Service.Bootstrap
 {
     public class MvcConfigurationManager
     {
@@ -16,7 +13,7 @@ namespace CampusPulse.SearchService.Bootstrap
 
             var mvcBuilder = services.AddMvc(options =>
             {
-                options.Filters.Add(new SearchServiceExceptionFilterAtribute(null));
+                options.Filters.Add(new ServiceExceptionFilterAtribute(null));
             }).AddJsonOptions(options =>
             {
                 options.SerializerSettings.NullValueHandling = NullValueHandling.Ignore;

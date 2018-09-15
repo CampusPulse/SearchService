@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace CampusPulse.SearchService.Bootstrap
+namespace CampusPulse.Core.Service.Bootstrap
 {
     public class CacheConfigurationManager
     {
@@ -10,7 +10,7 @@ namespace CampusPulse.SearchService.Bootstrap
             services.AddDistributedRedisCache(options =>
             {
                 options.Configuration = configuration["RedisCacheOptions:Configuration"];
-                options.InstanceName = configuration["RedisCacheOptions:BookCatalog"];
+                options.InstanceName = configuration["RedisCacheOptions:Catalog"];
             });
         }
     }

@@ -1,12 +1,9 @@
 ﻿
-namespace CampusPulse.Trade.Service
+namespace CampusPulse.SearchService
 {
     using Microsoft.AspNetCore.Builder;
     using Microsoft.AspNetCore.Routing;
     using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Threading.Tasks;
 
     public static class RouteHelper
     {

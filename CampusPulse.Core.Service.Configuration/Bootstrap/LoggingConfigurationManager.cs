@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace CampusPulse.SearchService.Bootstrap
+namespace CampusPulse.Core.Service.Bootstrap
 {
     public class LoggingConfigurationManager
     {
